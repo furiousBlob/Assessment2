@@ -9,7 +9,7 @@ def load_excel(file):
         return pd.read_excel(file)
 
 def highlight_differences(row):
-    return ['background-color: black' if row[0] != row[1] else '' for _ in row]
+    return ['color: black' if row[0] != row[1] else '' for _ in row]
 
 def create_diff_column(df_v1, df_final):
     diff_columns = []
