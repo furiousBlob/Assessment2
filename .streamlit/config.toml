@@ -1,0 +1,52 @@
+[global]
+disableWidgetStateDuplicationWarning = false
+showWarningOnDirectExecution = true
+
+[logger]
+level = "info"
+messageFormat = "%(asctime)s %(message)s"
+
+[client]
+showErrorDetails = true
+toolbarMode = "auto"
+showSidebarNavigation = true
+
+[runner]
+magicEnabled = true
+fastReruns = true
+enforceSerializableSessionState = false
+enumCoercion = "nameOnly"
+
+[server]
+folderWatchBlacklist = []
+fileWatcherType = "auto"
+cookieSecret = "a-random-key-appears-here"
+headless = false
+runOnSave = false
+address = ""
+port = 8501
+baseUrlPath = ""
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 200
+maxMessageSize = 200
+enableWebsocketCompression = false
+enableStaticServing = false
+sslCertFile = ""
+sslKeyFile = ""
+
+[browser]
+serverAddress = "localhost"
+gatherUsageStats = true
+serverPort = 8501
+
+[mapbox]
+token = ""
+
+[theme]
+base = "light"  # Or "dark" if you prefer
+primaryColor = "#1f77b4"  # Example color
+backgroundColor = "#ffffff"  # Example color
+secondaryBackgroundColor = "#f5f5f5"  # Example color
+textColor = "#000000"  # Example color
+font = "sans serif"  # Or "serif" or "monospace"
